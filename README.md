@@ -6,6 +6,8 @@ It's a tool that segments messages in group chat into several conversations, eac
 
 Following there's a short explanation of the algorithm, which assumes knowledge of NLP and Neural Networks.
 
+**For installation instructions refer to [config/install_config.md](https://github.com/WillahScott/topic_segmenter/blob/master/config/install_config.md)**
+
 ## Considerations
 
 The messages belonging to the same group might not necessarily be sequential. For example, there could this order of topics: *cake*, *trip*, *cake*, *family*. This means that the topic *cake* was treated twice, thus
