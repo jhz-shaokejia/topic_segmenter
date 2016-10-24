@@ -1,0 +1,145 @@
+,ID,reason,text,topic
+0,2,window empty,"In addition, because none of this is associated with our university addresses, we are not subject to FOIAs, so we can say dumb things without the threat of being taken down for it.",topic-00
+1,4,same author,yeo!,topic-00
+2,5,same author,"we can share the codes `inline = rnorm(1,1,1)` and in blocks ``` blocks = rnorm(100, 1, 1) ```",topic-00
+3,6,same author,"And, things stay in places that make sense.",topic-00
+4,7,same author,"There are presently two additional channels to keep things straight. <#C16S81202> and <#C16RM7TD2> “subscribe"" to those if you haven’t.",topic-00
+5,8,same author,"Also, the phone and desktop clients are nice.",topic-00
+6,11,same author,sup <@U16S9N0LE>,topic-00
+7,12,same author,sup <@U16RAECF5>,topic-00
+8,14,same author,Another thought… because who doesn’t have time for more thoughts…,topic-00
+9,15,same author,"There is a lot of working being done right now about evaluating the “gender tone” of job posts, resumes, etc. For example, work being done by <https://textio.com/> that is running things past a sentiment and gender filter on a bag of words. Possible for ballots when they come out? Candidate position statements? This is non-expermiental work, and probably just mostly sensational work that would be headed for the news cycle not a journal, but it is pretty low-hanging fruit.",topic-00
+10,16,same author,I bet that we could even get them to task an intern onto collecting the corpus of text for us as well.,topic-00
+11,19,cosine 0.855839314443,"Not for this election. That would have to be scraped, unfortunately. The Making Electoral Democracy Work project has press releases for campaigns in Britain and Canada for the last few elections but that corpus probably isn’t as interesting.",topic-00
+12,17,no similarity nor grammatically a reply,My first thought was to use this to examine candidate press releases. I wonder about the extent to which the gender tone of these statement varies across parties and/or according to the gender of the candidate.,topic-01
+13,18,previous topic with one element,Does a current corpus exist? Would love to know how Trump comes out in a mysogeny (sp???) score.,topic-01
+14,20,cosine 0.876065416254,"I dunno, Trudeau’s campaign was pretty awesome.",topic-01
+15,21,no similarity nor grammatically a reply,<@U16RAECF5>: we doing that evidence review today?,topic-01
+16,22,same author,"yrp. I just finished a review, I'm going to give Devesh a quick call, then get on it.",topic-01
+17,23,no similarity nor grammatically a reply,k. i’m there too...,topic-02
+18,24,same author,"Is anybody mailing stamps to all-mail states? Perhaps for the general election the feds are taking care of postage, but for primaries people still have to pay postage (because it is not _strictly_ federal elections). Dammit, we should have done that.",topic-02
+19,25,grammatically upenn tag DT,That would have been a sweet intervention.,topic-02
+20,26,cosine 0.855377819115,Wait. It is still necessary to buy postage for mail in ballots in the general election.,topic-02
+21,27,same author,<http://about.usps.com/election-mail/election-mail-dmm-sheet.pdf>,topic-02
+22,28,same author,"So, mailing addresses, Oregon, GOTV messages, stamps.",topic-02
+23,29,no similarity nor grammatically a reply,I’m with you here except for Oregon. Why Oregon?,topic-03
+24,30,grammatically upenn tag DT,All mail state.,topic-03
+25,31,same author,So there is no selection into who is mailing and who is going in person.,topic-03
+26,32,no similarity nor grammatically a reply,Wow. I didn’t know that.,topic-04
+27,33,same author,Address from voting files?,topic-04
+28,34,same author,*addresses,topic-04
+29,35,no similarity nor grammatically a reply,Yup. Those are going to be HELLA high fidelity because they are an all mail state.,topic-05
+30,36,same author,"Additional treatment condition: mailing 2x the postage that is necessary, building in an explicit spillover on co-residents.",topic-05
+31,37,grammatically upenn tag DT,"That would be dope. No one has done this in the past? Seems like something Green/Gerber would have stumbled on at some point. If not, it is pretty sweet. No possible harms that I can imagine.",topic-05
+32,42,cosine 0.817807127371,"Yeah, that’s a short review. It is a shame that one of us doesn’t know Green, Gerber, or Sinclair. They would probably know.",topic-05
+33,38,no similarity nor grammatically a reply,I dunno. Seems so low hanging. SO low hanging.,topic-06
+34,39,same author,Here’s the closest I can find. From 2015. A natural experiment in Switzerland.,topic-06
+35,40,same author,<http://www.econstor.eu/bitstream/10419/123257/1/cesifo_wp5617.pdf>,topic-06
+36,41,same author,"Doesn’t have any citations to work that have manipulated postage. But, it doesn’t look exactly exhaustive.",topic-06
+37,43,cosine 0.827749488355,I know both Green and Sinclair well enough that they would answer my emails.,topic-06
+38,44,same author,"Ah, I shouldn’t have assumed. Might be something to run by them.",topic-06
+39,45,grammatically universal tag CONJ,<http://bmchealthservres.biomedcentral.com/articles/10.1186/1472-6963-4-16>,topic-06
+40,46,no similarity nor grammatically a reply,"But, I should be writing a dissertation...",topic-06
+41,47,no similarity nor grammatically a reply,You and me both...,topic-07
+42,48,same author,"Still, the simplicity is attractive. Plus, I always wanted to do a GOTV experiment",topic-07
+43,49,same author,But yeah - dissertation,topic-07
+44,50,cosine 0.84168166567,Difference is that my defense is in 14 days... and I’ve got chapters to go still.,topic-07
+45,51,cosine 0.831587741308,Fair point.,topic-07
+46,52,grammatically stemmed length of 1,Wow; that study you linked to is some BULLSHIT.,topic-07
+47,53,same author,(Congrats on being so close!),topic-07
+48,54,grammatically stemmed length of 1,Yeah,topic-07
+49,55,grammatically upenn tag DT,"I’ll take your congrats when it is in the rearview mirror. Until then, I’m “working” hard.",topic-07
+50,56,grammatically upenn tag DT,Gotcha,topic-07
+51,57,no similarity nor grammatically a reply,Heh - <http://weblogs.sun-sentinel.com/news/politics/broward/blog/2012/03/is_a_postage_stamp_just_like_a_1.html>,topic-07
+52,58,previous topic with one element,Sweet,topic-07
+53,60,no similarity nor grammatically a reply,"a really interesting piece on design of experiments, courtesy of devesh: <https://www.povertyactionlab.org/sites/default/files/publications/20160401handbookExperimentalDesign.pdf>",topic-07
+54,61,same author,"This looks awesome! Thanks, Micah!",topic-07
+55,62,no similarity nor grammatically a reply,"Hey <@U16RAECF5> I’m working on that Pol Behavior submission today, are you around for questions?",topic-08
+56,63,previous topic with one element,<@U16RLTH3N>: yepski. give me a call whenevs.,topic-08
+57,64,no similarity nor grammatically a reply,"Aight, or we can iterate in here a little bit to support the changes that I’m making in the file in Dropbox. You’re probably seeing it ping around right now.",topic-09
+58,65,same author,"I’ll put this talk in <#C1H66683U> for today, and then we can just remove it tomorrow when we submit.",topic-09
+59,66,no similarity nor grammatically a reply,Mute this topic bitch,topic-10
+60,68,same author,Im sorry. It's the sudafed,topic-10
+61,69,no similarity nor grammatically a reply,Lookin’ a bit like Ahab there.,topic-11
+62,70,grammatically stemmed length of 0,Sudafed*:wine_glass:,topic-11
+63,71,same author,I'm working on it,topic-11
+64,72,cosine 0.832771251695,"Preparin’ for those Ann Arbor winters, eh?",topic-11
+65,73,same author,My razors are packed already,topic-11
+66,74,no similarity nor grammatically a reply,Not sure if a razor is going to make it through that wicket...,topic-11
+67,75,previous topic with one element,It is pretty impressive.,topic-11
+68,76,no similarity nor grammatically a reply,2.5 months Apperantly,topic-12
+69,77,same author,Alex!!!!,topic-12
+70,78,same author,MR_PINK and I are harassing MR_WHITE on another channel. It's Alex's fault,topic-12
+71,79,same author,<@U16RLTH3N>: !!!!!!!!!!,topic-12
+72,80,grammatically stemmed length of 1,Clearly.,topic-12
+73,81,no similarity nor grammatically a reply,I like this app,topic-13
+74,82,previous topic with one element,<@U16TY5M6F>: How did that USAID boondoggle in Haiti end up going for you?,topic-13
+75,83,same author,"And, um... congratulations to each of you for discovering the effect of penis names on responses to requests for information. Wang Dong!",topic-13
+76,84,no similarity nor grammatically a reply,"Thanks Alex. We think that this finding makes several contributions and has obvious familial implications. That is, parents shouldn't name their kid Richard.",topic-14
+77,85,previous topic with one element,you guys are actually fucked in the head. here's something of value: <http://stanford.edu/~dbroock/stanford-berkeley-opinion-survey/Stanford-Berkeley_Survey_of_Public_Opinion/Stanford-Berkeley_Opinion_Survey.html>,topic-14
+78,86,same author,People – can I please have the basic citation on parental influence? Is it Converse? Please excavation point?,topic-14
+79,87,cosine 0.818069422789,"Campbell, Converse, Miller, and Stokes. 1960. The American voter. New York: John Wiley &amp; Sons, Inc.",topic-14
+80,88,cosine 0.810460685346,Haiti project is humming right along,topic-14
+81,89,cosine 0.833862353082,I’m jealous. <@U16RAECF5> and I have nothing but *hard* sandbagging by our Mission contacts...,topic-14
+82,90,same author,That seems the norm,topic-14
+83,91,same author,<@U16TY5M6F>: can we use any of this data to build the IRT ranking model?,topic-14
+84,92,cosine 0.818094595681,Probably. What's the underlying concept?,topic-14
+85,93,same author,"<@U1CCHNQ3V>: Where you at bro? In SD this week, so is Chris, so is Micah. Sup with it?",topic-14
+86,94,cosine 0.86573597427,<@U16RLTH3N>: I need to download the app on my phone so I get these messages instantly. But I'm gonna get some drinks with <@U16RAECF5>,topic-14
+87,95,cosine 0.812543782583,"Hey <@U16RAECF5> and <@U1CCHNQ3V>: Try this out for a recommendation when you get your beers. The story about how it was made is linked, and the recommender is at the bottom of the linked page. <http://willnetsky.github.io/Beer-Recommender/>",topic-14
+88,96,cosine 0.887797454484,"It’s a pretty simple recommender -- seems to just key on most descriptive word. This is a little tough, because while there are a lot of nerds who rate beer, there are a lot of bros who know like 4 beer words: “dank”, “fruit”, “sour”, ... . And, this sort of mainlines the recommendations. I think a little filtering would help clean this up.",topic-14
+89,97,cosine 0.886494893897,"Also, some rankings.",topic-14
+90,98,no similarity nor grammatically a reply,Checked it out. I'm into it.,topic-14
+91,99,previous topic with one element,Two syllabi that my be of interest: Matt Blackwell: <http://www.mattblackwell.org/files/teaching/gov2002-15f-syllabus.pdf> and Danny Hidalgo: <http://www.mit.edu/~dhidalgo/syllabi/17_802_syll2014.pdf>. MR_WHITE pointed out that Hidalgo is more interested in observational data. Nice bibliography between the two.,topic-14
+92,100,no similarity nor grammatically a reply,<@U16RY7PR6>: Can I share the PSU irb material --- specifically the short part where you dared PSU to not grant exempt status --- with <@U16RAECF5> and <@U1CCHNQ3V>? <@U1CCHNQ3V> is putting together an encouragement design intervention right now.,topic-14
+93,101,grammatically upenn tag DT,"I bet he’ll share back his completed documents, too?",topic-14
+94,102,no similarity nor grammatically a reply,<@U16RY7PR6>: <@U16RLTH3N> <@U16RAECF5> and I would be happy to share the completed documents,topic-14
+95,103,previous topic with one element,<@U16RLTH3N>: <@U16RAECF5> <@U1CCHNQ3V> Totally! I have a folder full of IRBs and you are welcome to any of them. I think that one that MR_WHITE has probably contains the sharpest language.,topic-14
+96,105,no similarity nor grammatically a reply,<@U1CCHNQ3V>: I just uploaded the doc I’m sending to Berkelye.,topic-14
+97,106,previous topic with one element,"On helping people understand the value of experimental research: I've been thinking a lot about the push back that MR_WHITE and I got in designing a useful intervention. Today again I was talking to someone who has the opportunity to learn about a program's effectiveness, but instead is waving their hands talking nonsense. Has anyone seen a good attempt at explaining the value of experimental research to a non-technical audience?",topic-14
+98,107,no similarity nor grammatically a reply,"<@U16RAECF5>: Unfortunately, no. I looked for something like this when I was reviewing a proposal for the National Opinion Research Center but couldn’t find anything like it. The proposed intervention was sooooooooooooooooo bad.",topic-15
+99,108,same author,"<@U16RAECF5>: Also, I’m working out responses to your emails. One of them is almost perfectly in line with something that I just spoke with Matt Golder about earlier today. It was like you read my mind. Spooky.",topic-15
+100,109,same author,:grinning:,topic-15
+101,110,cosine 0.844639443897,squad! anyone interested in sharing a room in Philly?,topic-15
+102,111,same author,"<@U16RAECF5>: Just got your voicemail, I was in a faculty meeting. Holler at me if you’re otherwise undisposed.",topic-15
+103,112,same author,"This study is that _straight_ dope. But I want a <@U16TY5M6F> viewpoint on their model. In particular, they’re interpreting their item difficulty parameters in a _really_ literal sense (literally the probability that a traffic stop will occur). I’d love to read closely and talk with anyone who has also read it closely, though I know that you are all probably at APSA right now.",topic-15
+104,113,same author,<https://5harad.com/papers/threshold-test.pdf>,topic-15
+105,114,same author,Here’s the git repo to their work.,topic-15
+106,115,cosine 0.879005715885,<https://github.com/5harad/threshold-test>,topic-15
+107,116,same author,holy crap. this shit is good. I'd also be really interested to hear Chris's take,topic-15
+108,117,same author,"In particular, the core of their result hinges on a literal interpretation of the item-difficulty parameters that they estimate. I’m not deep enough into this type of model to know if that is warrented.",topic-15
+109,118,same author,*warranted.,topic-15
+110,119,same author,I’m bringing it to the central list... because those fools in <#C16S81202|bureaucrats> weren’t paying attention!,topic-15
+111,120,same author,I’ve got a three way interaction that I’ve got to interpret -- two conditioning factors and a treatment -- and there is no way that that journal I’m sending this to (California Journal of Politics and Policy) is going to let me get away with that.,topic-15
+112,121,cosine 0.892262837197,"So, I’ve got to simplify the presentation somehow. Here was my thought: just present treatment effects (that is the first-difference on the treatment factor), in a `2x3` table where the dimensions on the table are the conditioning factors (one which has two levels and one which has three levels).",topic-15
+113,122,cosine 0.800982280125,"The models that go into these estimates are the following: ``` m1 = glm(yvar ~ treatment, family = “binomial”) # this is going to be in black m2 = glm(yvar ~ treatment * structural, family = “binomial”) # in grey column m3 = glm(yvar ~ treatment * realized, family = “binomial”) # in grey row m4 = glm(yvar ~ treatment * realized * structural, family = “binomial”) # internal cells ```",topic-15
+114,124,cosine 0.892158256032,"<@U16RY7PR6> <@U16RLTH3N> <@U16S9N0LE> - so do we know of anyone who has data on the race of state leg.s? If not, how about the idea of using the facial recognition software tools we were looking at earlier to pull legislator race from publicly available pictures (FB profiles, pics on state web pages, etc.)?",topic-15
+115,125,cosine 0.855603264804,<@U16RAECF5> We could perhaps do that. Why state leg.s? I wonder if Adam (<http://adamdynes.com/>) might have info on municipal officials from his survey.,topic-15
+116,126,grammatically reply starter ok.,<@U16RY7PR6> unless I'm mistaken there is a very low cost follow-on paper to our state legislator experiment in which we determine whether the race of state legislators impacts response rates.,topic-15
+117,127,grammatically upenn tag DT,"<@U16RAECF5> Gotcha. I would agree with that. I wonder what the state of the art is with name recognition software - since we already have the names of all the representatives. Or maybe we just MTurk the whole thing. We might be able to get urls for individual legislators from Sunlight Foundation. We could then ask MTurkers to load the pages and identify the representative’s race. Have each MTurker do each legislator at least once. Some back of the envelope calculations suggest that it would take around 250 hours to identify each one once this way. At 8 an hour, that is 2,000 plus Amazon fees. Of course, that is only for one coder.",topic-15
+118,128,same author,ok. i'm going to look into bringing someone on who might take care of these tasks. will get back to the group when I hear.,topic-15
+119,129,grammatically reply starter ok,"The name software is pretty good these days, but we can know (by querying @nk in the the other channel) where it is specifically. He was on the team at IBM that wrote some of the name \rightarrow ethnicity software that IBM uses.",topic-15
+120,130,cosine 0.824238786976,Anyone have 2 minutes to talk about blocking and matching as a way to get at a heterogeneous treatment effect. I’m spinning my wheels now.,topic-15
+121,131,same author,"OK - Jason S., new in Pol. Sci. at UGA, formerly at Berkeley, informs me that his facial recognition tool is ready to go, and could turn profile or other photos into an estimate of the race of state leg.s, and also a distance metric relative to a racial category. I think this would be a very straightforward, solid publication. I'll be meeting with him in a couple of weeks to talk through the specifics. In the meantime, if folks on the team could think about how we might get the photos together, that would be helpful.",topic-15
+122,132,same author,"Here is something for the Congress, which we probably already knew existed? <https://www.gpo.gov/fdsys/browse/collection.action?collectionCode=GPO&amp;browsePath=Congressional+Pictorial+Directory>",topic-15
+123,134,cosine 0.856344419767,I’m asking my research librarian if he knows of other such resources. One possibility is the Congressional YellowBook.,topic-15
+124,135,no similarity nor grammatically a reply,<@U16RAECF5>: You want to change our legal status to domestic partner so we can both apply at UT? That way one of us can get the spouse hire for the other?,topic-15
+125,136,no similarity nor grammatically a reply,I do.,topic-15
+126,137,no similarity nor grammatically a reply,"Ok. But I cook better than I wash dishes, just so we know what the trade-off is.",topic-15
+127,138,grammatically reply starter ok,"IIA. Btw, I think we do know about the photobook bc. some hngers were doing a project. The win here would be to get race for state leg.s, bc. there is a really valuable observational part. We can wrap that into the secondary analysis of the experiment, and together with the data and the tool, we have a fucking phatty pub.",topic-15
+128,139,no similarity nor grammatically a reply,"I’ll let you know what is out there when my librarian gets back with me. If Leadership Directories has put it together for us already, it would be _the_ dope.",topic-16
+129,140,same author,(BTW: I don’t know what IIA is...),topic-16
+130,141,same author,"Also, ask and you shall receive. I bring forth the data, or at least a demonstration that we can has the data.",topic-16
+131,144,same author,"The question I continue to have is, what we’re pointing this variable at. We can’t assess electoral consequences of this unless we undertake the _bonkers_ task of finding a standardized picture of every candidate for office that lost.",topic-16
+132,145,same author,That shit jus aint gonna happen.,topic-16
+133,146,same author,"So, we’re left with a bunch of unobserved selection into office, then a classifier that tells us something that we might already know (since we have that data series from these Quorum folks), and ...",topic-16
+134,147,grammatically reply starter ok.,"OK. first response, there is a kid at Berkely who has put something together: <http://www.christiandphillips.com/research-1/> From his website - ""...new data containing district and candidate demographic information for every state legislative general election from 1996-2015"". So we would be generating a competing data set, using a different approach. <@U16RLTH3N>, the answer to your question is very simple. This is an HTE that people care about. Period. That's what gets published in pol sci journals. If we don't do this follow up, somebody else will.",topic-16
+135,148,cosine 0.846311968899,"Do we know how Christian sourced his data? Is there benefit to be had in a dataset (just as a dataset) that is produced in a different fashion, that covers 10% of an existing data set? To me, the data _qua_ data contribution here feels a little slender, especially if someone else already has it. _Adding_ the skin-tone based racial assessment makes it a bit more sexy, but I don’t think it overcomes the hurdle that this fellow has the drop on us.",topic-16
+136,149,same author,"Having the data for our own purposes, to test the HTE, to me feels like a good justification. And I think you’re right that we should look at this either in this paper, or in a followup paper to this experiment.",topic-16
+137,150,same author,"Does anybody have an in either at Pew or the NCSL? I wonder because they’ve published a _Stateline_ series, which at least has the ethnicity data that MR_BROWN and MR_ORANGE were thinking about. I’ve been warned that if I scrape the data from the group that I had posted about last week, that the group would shut down campus access and I would be persona non grata.",topic-16
+138,151,same author,<@U16RY7PR6> and <@U16TY5M6F> I’ll be in A2 Monday October 3. Let me know if you’re available and we can work on some of this boondoggle in person again.,topic-16
+139,152,cosine 0.852296893083,<@U16RLTH3N> I’m available all day except from 12-3. It’d be great to get together.,topic-16
+140,153,cosine 0.843904926706,Woot! Maybe in the morning? I haven’t been on campus in Ann Arbor in a while...,topic-16
+141,154,same author,Totally! Do you have a place to stay?,topic-16
+142,155,no similarity nor grammatically a reply,<!channel>: One of my co-authors is building a topic classifier that is functioning on Slack data. I want to export this and give it to the student/co-author.,topic-16
+143,156,no similarity nor grammatically a reply,Would this make you sad? Would this violate your rights? Would this give away trade secrets?,topic-16
