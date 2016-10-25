@@ -1,4 +1,5 @@
 
+import os
 import sys
 import warnings
 from functools import wraps
@@ -67,13 +68,6 @@ class Corpus(object):
             # Override NLTKs stopword list
             self.__STOPWORDS = set(stopwords)
 
-
-    @property
-    def PUNCTUATION(self):
-        """ Set of punctuation symbols to be removed. These symbols are removed from the documents """
-        return self.__PUNCTUATION
-
-
     @property
     def USER_STRING(self):
         """ Set of punctuation symbols to be removed. These symbols are removed from the documents """
@@ -95,7 +89,7 @@ class Corpus(object):
 
     def from_topic_table(self, topics_table):
         """ Generate the set of documents from the topic_table list """
-        grouped = TOPICS_DATA[['topic', 'text']].groupby('topic')
+        grouped = topics_table[['topic', 'text']].groupby('topic')
         docs = grouped.agg(lambda x: ' '.join( map(lambda x: x.encode('ascii', 'replace'), x) ))
 
         self.documents = docs.values.flatten()
@@ -129,6 +123,7 @@ class Corpus(object):
 
     @check_init
     def process(self):
+        """ Processes the entire corpus """
         docs = reduce( lambda x, f: map(f, x), [self.documents, self.remove_punct, self.remove_usernames] )
 
         # Remove stopwords and tokenize
@@ -158,8 +153,15 @@ class Corpus(object):
         else:
             output = self.pickle_path
 
+        # Check existence of the output folder and create if necessary
+        out_folder = '/'.join(output.split('/')[:-1])
+        if not os.path.exists(out_folder):
+            print(' - The specified folder was not found... folder will be created: \033[36m{}\033[0m'.format(out_folder))
+            os.makedirs(out_folder)
+
+        # Save corpus
         with open(output, 'wb') as f:
-            pk.dump(f, self)
+            pk.dump(self, f)
 
         if verbose:
             print(' -- Saved pickle file to: {}'.fortmat(output))
