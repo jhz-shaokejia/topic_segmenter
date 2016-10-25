@@ -61,7 +61,7 @@ class SegmenterRunner:
     def report_table(self):
         # Check existence of the output folder and create if necessary
         if not os.path.exists(self.output_folder):
-            print(' - The specified folder was not found... folder will be created: \033[36m{}\033[0m')
+            print(' - The specified folder was not found... folder will be created: \033[36m{}\033[0m'.format(self.output_folder))
             os.makedirs(self.output_folder)
 
         # Parse output path/file name and save table to topics_CHANNEL.csv
