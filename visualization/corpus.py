@@ -1,4 +1,5 @@
 
+import sys
 import warnings
 from functools import wraps
 from collections import defaultdict
@@ -22,14 +23,15 @@ def load_corpus(pickle_file):
 class Corpus(object):
     """ Corpus object, to be used for Models such as TFIDF and word2vec / GloVe """
 
-    def __init__(self, stopwords='NLTK', punctuation='.,!`', user_string='<u\w*>'):
+    def __init__(self, stopwords='NLTK', punctuation='.,!`', user_string='<u\w*>', output=None):
         """ Note - Pass an iterable to stopwords to override NLTKs stopwords """
         super(Corpus, self).__init__()
         self.STOPWORDS = stopwords
         self.PUNCTUATION = punctuation
         self.USER_STRING = user_string
 
-        # TODO - corpus storage
+        # corpus storage
+        self.pickle_path = output
 
         # Initialize to None
         self.documents = None
@@ -149,10 +151,29 @@ class Corpus(object):
         self.corpus = map( self.dictionary.doc2bow, texts )
 
 
-    def store_corpus(self, verbose=False):
+    def store_corpus(self, pickle_path=None, verbose=False):
         """ Stores the corpus as a pickle file """
-        with open(self.pickle_path, 'wb') as f:
+        if pickle_path is not None:
+            output = pickle_path
+        else:
+            output = self.pickle_path
+
+        with open(output, 'wb') as f:
             pk.dump(f, self)
 
         if verbose:
-            print(' -- Saved pickle file to: {}'.fortmat(pickle_path))
+            print(' -- Saved pickle file to: {}'.fortmat(output))
+
+
+
+def main():
+    the_corpus = Corpus()
+    the_corpus.from_topic_table_csv(sys.argv[1])
+
+    # Store if the output path was specified
+    if len(sys.argv) > 2:
+        the_corpus.store_corpus(sys.argv[2])
+
+
+if __name__ == '__main__':
+    main()
