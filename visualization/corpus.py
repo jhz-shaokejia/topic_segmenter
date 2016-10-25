@@ -1,12 +1,22 @@
 
 import warnings
 from functools import wraps
+from collections import defaultdict
+
 import re
+import cPickle as pk
+import pandas as pd
 
 from nltk.corpus import stopwords as NLTKstopwords
-
-from gensim.models.tfidfmodel import TfidfModel
 from gensim import corpora
+
+
+
+def load_corpus(pickle_file):
+    """ Returns the Corpus instance """
+    with open(pickle_file, 'rb') as f:
+        return pk.load(f)
+
 
 
 class Corpus(object):
@@ -15,10 +25,16 @@ class Corpus(object):
     def __init__(self, stopwords='NLTK', punctuation='.,!`', user_string='<u\w*>'):
         """ Note - Pass an iterable to stopwords to override NLTKs stopwords """
         super(Corpus, self).__init__()
-        self.documents = None
         self.STOPWORDS = stopwords
         self.PUNCTUATION = punctuation
         self.USER_STRING = user_string
+
+        # TODO - corpus storage
+
+        # Initialize to None
+        self.documents = None
+        self.dictionary = None
+        self.corpus = None
 
 
     def check_init(func):
@@ -91,21 +107,52 @@ class Corpus(object):
 
     ### PROCESSORS -----------------------------------
 
-    def get_remover(self):
-        def remover(document):
-            """ Reduce  """
-            return reduce( lambda d, s: d.replace(s, ''), [document,] + self.STOPWORDS + list(self.PUNCTUATION) )
-
-    @check_init
-    def remove_punct_stops(self, corpus):
-        # Removes each of the symbols
-        return map(self.get_remover(), self.documents)
+    def remove_punct(self, doc):
+        """ Removes each of the symbols specified in the PUNCTUTATION property """
+        return reduce( lambda d, s: d.replace(s, ''), [doc,] + list(self.PUNCTUATION) )
 
 
-    @check_init
     def remove_usernames(self, doc):
+        """ Removes the usernames from a document, according to the specified in the PUNCTUTATION property """
         return self.__USER_STRING.sub('', doc)
 
 
+    def get_full_remover(self):
+        """ Returns the current punctuation + username remover """
+        def remover(document):
+            """ Removes punctuation marks from documents """
+            return reduce( lambda d, f: f(d), [document, self.remove_punct, self.remove_usernames] )
+        return remover
+
+
+    @check_init
     def process(self):
-        pass
+        docs = reduce( lambda x, f: map(f, x), [self.documents, self.remove_punct, self.remove_usernames] )
+
+        # Remove stopwords and tokenize
+        texts = map( lambda doc: [word for word in doc.lower().split() if word not in STOPWORDS], docs )
+
+        # Generate a dictionary with the term frequency
+        frequency = defaultdict(int)
+        for text in texts:
+            for token in text:
+                frequency[token] += 1
+
+        # remove words that appear only once
+        texts = map( lambda text: filter(lambda token: frequency[token] > 1, text), texts )
+
+        # Generate dictionary of terms
+        self.dictionary = corpora.Dictionary(texts)
+        # dictionary.save('/tmp/deerwester.dict')  # store the dictionary, for future reference
+
+        # Finally, generate the corpus
+        self.corpus = map( self.dictionary.doc2bow, texts )
+
+
+    def store_corpus(self, verbose=False):
+        """ Stores the corpus as a pickle file """
+        with open(self.pickle_path, 'wb') as f:
+            pk.dump(f, self)
+
+        if verbose:
+            print(' -- Saved pickle file to: {}'.fortmat(pickle_path))
