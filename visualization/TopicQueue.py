@@ -35,14 +35,14 @@ class TopicCover():
     def add_entry(self, message_id):
         """ Add a message to the topic queue """
         message_words = set(self.message_corpus[message_id].split())
-        entry = Entry(priority=get_priority(message_words), wordset=message_words, id=message_id)
+        entry = Entry(priority=self.get_priority(message_words), wordset=message_words, id=message_id)
         self.pq.put( entry )
 
 
     def update_entry(self, entry):
         """ Updates the priority and wodset of an entry based on the actual cover """
         new_words = entry.wordset.difference(self.words_in_cover)
-        return Entry(priority=get_priority(new_words), wordset=new_words, id=entry.id)
+        return Entry(priority=self.get_priority(new_words), wordset=new_words, id=entry.id)
 
 
     def stop_updating(self, entry):
