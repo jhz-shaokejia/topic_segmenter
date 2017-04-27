@@ -1,6 +1,6 @@
 from pprint import pprint
 import json
-from Message import Message
+from text.Message import Message
 
 USER = u'user'
 ANON_TEXT = u'anon_text'

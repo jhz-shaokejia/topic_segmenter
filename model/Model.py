@@ -6,7 +6,8 @@ class Model:
     def __init__(self, messages, tokenizer):
         self.tokenizer = tokenizer
         self.innerModel = self.trainNewModel(messages)
-        self.index2wordSet = set(self.innerModel.index2word)
+        #self.index2wordSet = set(self.innerModel.index2word)
+        self.index2wordSet = set(self.innerModel.wv.index2word)
 
     def trainNewModel(self, messages):
         return gensim.models.Word2Vec(
@@ -26,9 +27,9 @@ class Model:
         decay = (0.993 ** indexDistance) # must be related to the cosine threshold
         while startA < len(fullTokensA):
             startB = 0
-            tokensA = fullTokensA[startA:(startA + width)]
+            tokensA = fullTokensA[int(startA):int(startA + width)]
             while startB < len(fullTokensB):
-                tokensB = fullTokensB[startB:(startB + width)]
+                tokensB = fullTokensB[int(startB):int(startB + width)]
                 cosine = self.innerModel.n_similarity(tokensA, tokensB) * decay
                 centroid = self.centroidDistance(tokensA, tokensB) / decay
                 pair = (centroid, cosine)

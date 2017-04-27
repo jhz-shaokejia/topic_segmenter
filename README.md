@@ -43,7 +43,7 @@ There's one additional consideration, we use a decay function (base 0.993) for b
 When we want to find the similarity distance between two messages, we first find, from all the pairs of windows, the smallest 5% by euclidean distance, and from them we pick the pair with the greatest cosine similarity. We do this because it can happen that two windows are very close in the euclidean metric by they are orthogonal (unrelated semantically) and thus the similarity is 0.
 
 ## Sample Run
-`python Runner.py ./samplegeneral.json`
+`python Runner.py ./data/sample/general.json`
 
 ## Sample Output:
 

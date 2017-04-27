@@ -1,7 +1,7 @@
 import gensim
 import sys
 import math
-from Model import Model
+from model.Model import Model
 
 class SimilarTopicCalculator:
     def __init__(self, window, messages, tokenizer):

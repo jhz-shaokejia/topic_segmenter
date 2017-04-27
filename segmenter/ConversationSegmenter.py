@@ -1,4 +1,4 @@
-from Window import Window
+from segmenter.Window import Window
 from model.SimilarTopicCalculator import SimilarTopicCalculator
 from model.ReplyObjectPredictor import ReplyObjectPredictor
 from text.Topic import Topic
